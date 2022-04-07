@@ -66,7 +66,7 @@ Also, we can use a service to change the pose of the turtle. We can't change the
 ```matlab
 PoseSvcClient = rossvcclient('/turtle1/teleport_absolute');
 PseMsg= rosmessage(PoseSvcClient);
-```matlab
+```
 
 #### Disconnect
 
