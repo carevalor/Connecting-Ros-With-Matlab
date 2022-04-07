@@ -72,6 +72,8 @@ PoseSvcClient = rossvcclient('/turtle1/teleport_absolute');
 PseMsg= rosmessage(PoseSvcClient);
 ```
 [![teleport.png](https://i.postimg.cc/tgwQB6fv/teleport.png)](https://postimg.cc/v1rNB4G5)
+
+Note that, again, Pose values changes once the teleport is done.
 #### Disconnect
 
 When you finish to use ROS with matlab,  use the following command to finish the master node.
