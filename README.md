@@ -39,6 +39,8 @@ pause(1)
 ```
 You will see the turtle moving on.
 
+![publisher](https://github.com/carevalor/Connecting-Ros-With-Matlab/tree/main/Images/publisher.png)
+
 #### Subscriber
 
 Now, we wanna see the turtle's position and orientation. So, we need to subscribe to a topic.
@@ -49,6 +51,8 @@ subPos = rossubscriber('/turtle1/pose','turtlesim/Pose');
 subPos.LatestMessage  
 ```
 Finnaly, use the LatestMessage option to know the previous values of position and orientation.
+
+![pose](https://github.com/carevalor/Connecting-Ros-With-Matlab/tree/main/Images/pose.png)
 
 If we send a message using our publisher, the values changes.
 
@@ -67,7 +71,7 @@ Also, we can use a service to change the pose of the turtle. We can't change the
 PoseSvcClient = rossvcclient('/turtle1/teleport_absolute');
 PseMsg= rosmessage(PoseSvcClient);
 ```
-
+![teleport](https://github.com/carevalor/Connecting-Ros-With-Matlab/tree/main/Images/teleport.png)
 #### Disconnect
 
 When you finish to use ROS with matlab,  use the following command to finish the master node.
